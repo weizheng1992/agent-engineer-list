@@ -90,7 +90,7 @@
 -   Code Highlight
 -   历史记录
 
-目录： [temporal-ai-agent](https://github.com/weizheng1992/temporal-ai-agent)
+目录： 
 
     ai-chat
 
@@ -117,7 +117,7 @@
 -   Tool Router
 -   Error Handling
 
-项目：
+项目： [temporal-ai-agent](https://github.com/weizheng1992/temporal-ai-agent)
 
 ## AI Assistant
 
