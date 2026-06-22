@@ -161,7 +161,7 @@
 -   Resource
 -   Tool
 
-项目：
+项目：[mini-cursor-agent](./mini-cursor-agent/)
 
 ## MCP Developer Assistant
 
