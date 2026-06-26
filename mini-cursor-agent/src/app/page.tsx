@@ -1,16 +1,16 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import { 
-  Terminal, 
-  Send, 
-  FileText, 
-  CheckCircle, 
-  Activity, 
-  Cpu, 
-  Layers, 
-  Loader2, 
-  RefreshCw, 
+import {
+  Terminal,
+  Send,
+  FileText,
+  CheckCircle,
+  Activity,
+  Cpu,
+  Layers,
+  Loader2,
+  RefreshCw,
   Code,
   FileCode,
   ArrowRight,
@@ -19,7 +19,9 @@ import {
   Settings,
   HelpCircle,
   MessageSquare,
-  AlertCircle
+  AlertCircle,
+  Compass,
+  ExternalLink
 } from 'lucide-react';
 
 interface Message {
@@ -222,17 +224,30 @@ What would you like to build or analyze today?`
             <div className="text-xs font-semibold text-slate-500 px-3 py-2 uppercase tracking-wider">
               Recent Workspaces
             </div>
-            <button 
+            <button
               onClick={() => setActiveSession('Session 1')}
               className={`w-full text-left px-3 py-2 rounded-md text-sm flex items-center space-x-2 transition-all ${
-                activeSession === 'Session 1' 
-                  ? 'bg-indigo-600/20 text-indigo-200 border border-indigo-500/30' 
+                activeSession === 'Session 1'
+                  ? 'bg-indigo-600/20 text-indigo-200 border border-indigo-500/30'
                   : 'text-slate-400 hover:bg-slate-800 hover:text-slate-200 border border-transparent'
               }`}
             >
               <MessageSquare className="w-4 h-4" />
               <span>Workspace Analyzer</span>
             </button>
+
+            <a
+              href="http://127.0.0.1:3002"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-left px-3 py-2 rounded-md text-sm flex items-center justify-between text-slate-400 hover:bg-slate-800 hover:text-slate-200 border border-transparent group transition-all"
+            >
+              <div className="flex items-center space-x-2">
+                <Compass className="w-4 h-4 text-cyan-400" />
+                <span>Context Engineering</span>
+              </div>
+              <ExternalLink className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition" />
+            </a>
           </div>
         </div>
 

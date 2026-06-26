@@ -60,3 +60,5 @@ Thumbs.db
 .superpowers/
 .agents/
 .codex/
+.claude/
+docs/
