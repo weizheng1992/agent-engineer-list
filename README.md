@@ -349,7 +349,7 @@ LangGraph
 
 时间：4周
 
-项目：
+项目：(ai-software-team)[./ai-software-team]
 
 ## AI Software Team
 

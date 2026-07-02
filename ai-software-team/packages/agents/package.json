@@ -1,0 +1,27 @@
+{
+  "name": "@ai-software-team/agents",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.0.0",
+    "@ai-software-team/tools": "workspace:*",
+    "@langchain/core": "^1.2.1",
+    "ai": "^4.0.0"
+  },
+  "devDependencies": {
+    "@langchain/openai": "^1.5.3",
+    "@types/node": "^26.1.0",
+    "typescript": "^5.7.2"
+  }
+}

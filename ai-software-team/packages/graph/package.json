@@ -1,0 +1,26 @@
+{
+  "name": "@ai-software-team/graph",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "@ai-software-team/agents": "workspace:*",
+    "@ai-software-team/tools": "workspace:*",
+    "@langchain/langgraph": "^0.2.33",
+    "@langchain/openai": "^1.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "typescript": "^5.7.2"
+  }
+}
